@@ -1,0 +1,53 @@
+* {font-family: Tahoma , sans-serif;}
+
+header {background-color: tomato; 
+    color: white; 
+    padding: 10px; 
+    width: 100%;}
+
+#glowny {background-color: seashell; 
+    height: 500px; 
+    overflow: auto; 
+    width: 100%;}
+
+#stopka1, #stopka2, #stopka3, #stopka4 {
+    background-color: tomato; 
+    color: white; 
+    width: 25%; 
+    height: 160px;}
+
+h1, h2 {text-align: center;}
+
+h4 {text-align: right; 
+    margin-right: 40px; 
+    font-size: 150%;}
+
+body {display: flex;
+    flex-wrap: wrap; 
+    padding: 0px; 
+    margin: 0px;}
+
+a {color: white;}
+
+.opinia {
+    background-color: white;
+    color: dimgray;
+    width: 60%;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px 5px dimgray;
+}
+
+img {
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+q {margin: 10px;
+    font-size: 150%;
+    font-style: italic;
+}

@@ -1,0 +1,11 @@
+pytanie 1:
+insert into zawody_wedkarskie values(NULL,2,4,'2011-09-28','Andrzej Nowak')
+
+pytanie 2:
+select id ,data_zawodow from zawody_wedkarskie where sedzia='Krzysztof Dobrowolski'
+
+pytanie 3:
+select k.imie ,k.nazwisko ,k.punkty from karty_wedkarskie k,zawody_wedkarskie z where z.id= 4 and z.karty_wedkarskie_id = k.id
+
+pytanie 4:
+update karty_wedkarskie set punkty=punkty+2 where id=1

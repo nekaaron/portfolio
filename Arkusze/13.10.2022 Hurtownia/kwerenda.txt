@@ -1,0 +1,7 @@
+1. SELECT kl.imie, kl.nazwisko, kl.punkty FROM klienci kl ORDER BY kl.punkty DESC LIMIT 3;
+
+2. SELECT ty.nazwa, COUNT(kl.Typy_id) AS 'Ilosc klientow' FROM klienci kl, typy ty WHERE kl.Typy_id = ty.id GROUP BY 1;
+
+3. SELECT kl.zdjecie, kl.imie, op.opinia FROM klienci kl, opinie op WHERE kl.id = op.Klienci_id  AND kl.Typy_id IN (2,3);
+
+4. ALTER TABLE klienci ADD adres varchar(50);

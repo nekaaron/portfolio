@@ -1,0 +1,26 @@
+- Zapytanie 1: wstawiające do tabeli klienci Nazwisko: Adamowski, Imie: Krzysztof, Nr_dowodu:
+PZN67812;
+<
+insert klienci values('', ''Adamowski', 'Krzysztof', 'PZN67812');
+>
+
+- Zapytanie 2: wybierające z tabeli samochody jedynie pola marka i model rok_produkcji samochodów
+rocznika 2000 i wybierające datę wypożyczenia z tabeli wypożyczenia;
+<
+select s.Marka, s.Model, s.rok_produkcji, w.Data_wypozycz
+from samochody s, wypozyczenia w
+where s.ID_samochodu = w.ID_samochodu and rok_produkcji Like '2000';
+>
+
+- Zapytanie 3: wybierające jedynie pole Marka dla wszystkich rekordów z tabeli samochody oraz
+zliczające ilość modeli w każdej Marce samochodu. Pole zliczające należy nazwać ilość;
+<
+select s.Marka, count(s.Model) as 'ilość'
+from samochody s
+group by 1;
+>
+- Zapytanie 4: modyfikujące strukturę tabeli wypozyczenia poprzez dodanie pola o nazwie Data_zwrotu i
+typie DATY.
+<
+alter table wyporzyczenia add Data_zwrotu DATE;
+>
